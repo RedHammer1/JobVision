@@ -1,0 +1,280 @@
+.vacancy-card-message {
+    background: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    padding: 16px 18px;
+    max-width: 420px;
+    width: 100%;
+    transition: all 0.2s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+}
+
+.vacancy-card-message:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.vacancy-card-message--own {
+    background: #4f46e5;
+    border-color: #4f46e5;
+}
+
+.vacancy-card-message--own .vacancy-card-message__title {
+    color: #ffffff;
+}
+
+.vacancy-card-message--own .vacancy-card-message__text {
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.vacancy-card-message--own .vacancy-card-message__link {
+    color: #c7d2fe;
+}
+
+.vacancy-card-message--own .vacancy-card-message__apply-btn {
+    color: #c7d2fe;
+    border-color: rgba(255, 255, 255, 0.3);
+}
+
+.vacancy-card-message--own .vacancy-card-message__apply-btn:hover {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.vacancy-card-message__recommended-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    background: #fef3c7;
+    color: #92400e;
+    padding: 4px 12px;
+    border-radius: 16px;
+    font-size: 12px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.vacancy-card-message--own .vacancy-card-message__recommended-badge {
+    background: rgba(255, 255, 255, 0.2);
+    color: #fff;
+}
+
+.vacancy-card-message__recommended-icon {
+    font-size: 14px;
+}
+
+.vacancy-card-message__recommended-by {
+    font-weight: 600;
+}
+
+.vacancy-card-message__header {
+    margin-bottom: 10px;
+}
+
+.vacancy-card-message__title {
+    font-size: 16px;
+    font-weight: 600;
+    color: #1f2937;
+    margin: 0;
+    line-height: 1.4;
+}
+
+.vacancy-card-message__details {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    margin-bottom: 12px;
+}
+
+.vacancy-card-message__detail {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+}
+
+.vacancy-card-message__icon {
+    font-size: 14px;
+    width: 20px;
+    flex-shrink: 0;
+}
+
+.vacancy-card-message__text {
+    color: #374151;
+}
+
+.vacancy-card-message__link {
+    color: #4f46e5;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.2s;
+}
+
+.vacancy-card-message__link:hover {
+    color: #4338ca;
+    text-decoration: underline;
+}
+
+.vacancy-card-message__actions {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    padding-top: 12px;
+    border-top: 1px solid #f3f4f6;
+}
+
+.vacancy-card-message--own .vacancy-card-message__actions {
+    border-top-color: rgba(255, 255, 255, 0.2);
+}
+
+.vacancy-card-message__share-btn {
+    padding: 6px 14px;
+    border: none;
+    background: #ede9fe;
+    color: #4f46e5;
+    border-radius: 6px;
+    font-size: 13px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.vacancy-card-message__share-btn:hover {
+    background: #ddd6fe;
+}
+
+.vacancy-card-message--own .vacancy-card-message__share-btn {
+    background: rgba(255, 255, 255, 0.2);
+    color: #fff;
+}
+
+.vacancy-card-message--own .vacancy-card-message__share-btn:hover {
+    background: rgba(255, 255, 255, 0.3);
+}
+
+.vacancy-card-message__apply-btn {
+    padding: 6px 14px;
+    border: 1px solid #e5e7eb;
+    background: transparent;
+    color: #4f46e5;
+    border-radius: 6px;
+    font-size: 13px;
+    font-weight: 500;
+    text-decoration: none;
+    transition: all 0.2s;
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.vacancy-card-message__apply-btn:hover {
+    background: #f3f4f6;
+}
+
+@media (max-width: 768px) {
+    .vacancy-card-message {
+        max-width: 100%;
+        padding: 14px 16px;
+    }
+
+    .vacancy-card-message__title {
+        font-size: 15px;
+    }
+
+    .vacancy-card-message__detail {
+        font-size: 13px;
+    }
+
+    .vacancy-card-message__actions {
+        flex-direction: column;
+    }
+
+    .vacancy-card-message__share-btn,
+    .vacancy-card-message__apply-btn {
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .vacancy-card-message {
+        padding: 12px 14px;
+        border-radius: 10px;
+    }
+
+    .vacancy-card-message__title {
+        font-size: 14px;
+    }
+
+    .vacancy-card-message__detail {
+        font-size: 12px;
+        gap: 6px;
+    }
+
+    .vacancy-card-message__icon {
+        font-size: 12px;
+        width: 18px;
+    }
+}
+
+.vacancy-card-message__manage-btn {
+    padding: 6px 14px;
+    border: 1px solid #f59e0b;
+    background: #fef3c7;
+    color: #92400e;
+    border-radius: 6px;
+    font-size: 13px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.vacancy-card-message__manage-btn:hover {
+    background: #fde68a;
+    border-color: #d97706;
+}
+
+.vacancy-card-message--own .vacancy-card-message__manage-btn {
+    background: rgba(251, 191, 36, 0.2);
+    border-color: rgba(255, 255, 255, 0.3);
+    color: #fff;
+}
+
+.vacancy-card-message--own .vacancy-card-message__manage-btn:hover {
+    background: rgba(251, 191, 36, 0.3);
+}
+
+.vacancy-card-message__manage-btn {
+    padding: 6px 14px;
+    border: 1px solid #f59e0b;
+    background: #fef3c7;
+    color: #92400e;
+    border-radius: 6px;
+    font-size: 13px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s;
+    white-space: nowrap;
+}
+
+.vacancy-card-message__manage-btn:hover {
+    background: #fde68a;
+    border-color: #d97706;
+    transform: translateY(-1px);
+}
+
+.vacancy-card-message--own .vacancy-card-message__manage-btn {
+    background: rgba(251, 191, 36, 0.2);
+    border-color: rgba(255, 255, 255, 0.3);
+    color: #fff;
+}
+
+.vacancy-card-message--own .vacancy-card-message__manage-btn:hover {
+    background: rgba(251, 191, 36, 0.3);
+    border-color: rgba(255, 255, 255, 0.5);
+}
+
+@media (max-width: 768px) {
+    .vacancy-card-message__manage-btn {
+        width: 100%;
+        justify-content: center;
+    }
+}

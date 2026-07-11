@@ -1,0 +1,13 @@
+requests
+beautifulsoup4
+lxml
+psycopg2-binary
+sqlalchemy
+python-dotenv
+tabulate
+schedule
+transliterate
+selenium
+webdriver-manager
+ujson
+colorama
